@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Каталог</title>
+</head>
+  <body class="page__body">
+    <header class="main-header">
+    <a class="main-header__logo" href="index.html">
+      <img class="main-header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип.">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list nav-list">
+          <li class="nav-list__item">
+            <a class="main-nav__link main-nav__link--current" href="catalog.html">
+              Каталог товаров
+            </a>
+          </li>
+          <li class="nav-list__item">
+            <a class="main-nav__link" href="form.html">
+              Вязание на заказ
+            </a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="main-nav__link user-list__search" href="#">Поиск по сайту</a>
+          </li>
+          <li class="user-list__item">
+            <a class="main-nav__link user-list__basket" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+    <main class="catalog-content">
+      <h1 class="visually-hidden">Главный каталог</h1>
+      <section class="catalog-heading">
+        <div class="catalog-heading__wrapper">
+          <h2 class="catalog-heading__text text text--bold text--extra">Каталог товаров</h2>
+        </div>
+      </section>
+      <section class="products">
+        <div class="products__wrapper">
+          <ul class="products__list">
+            <li class="products__item products-item">
+              <div class="products-item__image">
+                <img src="img/photo-1-mobile%201.png" width="260" height="195" alt="зайчик-попрыгайчик.">
+              </div>
+              <div class="products-item__description">
+                <h3 class="products-item__heading text text--bold text--head-small">Зайчик-попрыгайчик</h3>
+                <p class="products-item__characteristic text text--label-mini">Рост 30 см, вес 200 г</p>
+                <div class="products-item__footer">
+                  <p class="products-item__price text text--small text--bold">1200 руб.</p>
+                  <button class="products__button button button--icon button--basket" type="button">
+                    <span class="visually-hidden">в корзину</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="products__item products-item">
+              <div class="products-item__image">
+                <img src="img/photo-2-mobile%201.png" width="260" height="195" alt="Корзинка для белья.">
+              </div>
+              <div class="products-item__description">
+                <h3 class="products-item__heading text text--bold text--head-small">Корзинка для белья</h3>
+                <p class="products-item__characteristic text text--label-mini">Диаметр 15 см, высота 10 см</p>
+                <div class="products-item__footer">
+                  <p class="products-item__price text text--small text--bold">690 руб.</p>
+                  <button class="products__button button button--icon button--basket" type="button">
+                    <span class="visually-hidden">в корзину</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="products__item products-item">
+              <div class="products-item__image">
+                <img src="img/photo-3-mobile%201.png" width="260" height="195" alt="Большая корзинка для игрушек.">
+              </div>
+              <div class="products-item__description">
+                <h3 class="products-item__heading text text--bold text--head-small">Большая корзинка для игрушек</h3>
+                <p class="products-item__characteristic text text--label-mini">Диаметр 30 см, высота 30 см</p>
+                <div class="products-item__footer">
+                  <p class="products-item__price text text--small text--bold">1500 руб.</p>
+                  <button class="products__button button button--icon button--basket" type="button">
+                    <span class="visually-hidden">в корзину</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="process">
+        <h2 class="process__head-text text text--head-small text--bold">Процесс производства</h2>
+        <div class="process__video">
+          <button class="process__video-control button button--icon"><span class="visually-hidden">Проиграть видео</span></button>
+          <video src="#" preload="metadata" poster="img/video-mobile%201.png">
+          </video>
+        </div>
+        <p class="process__description text text--label-small">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <button class=" process__button button button--primary">Сделать заказ</button>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__logo">
+        <a class="main-footer__logo" href="#">
+          <img class="main-footer__logo-image" src="img/mishka-logo-tablet.svg" width="102" height="34" alt="Логотип.">
+        </a>
+      </div>
+      <div class="main-footer__socials socials">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a href="https://vk.com/htmlacademy" class="socials__link socials__link--vk"><span class="visually-hidden">Вконтакте</span></a>
+          </li>
+          <li class="socials__item">
+            <a href="https://www.youtube.com/user/htmlacademyru" class="socials__link socials__link--yt"><span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="https://t.me/htmlacademy" class="socials__link socials__link--tg"><span class="visually-hidden">Telegram</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <p class="copyright__text text text--head">Разработано</p>
+        <a class="copyright__logo" href="https://htmlacademy.ru/study">
+          <img class="copyright__logo-image" src="img/htmlacademy-footer.svg" width="27" height="34" alt="Логотип HTML academy.">
+        </a>
+      </div>
+    </footer>
+    <div class="modal modal--add-to-basket">
+      <div class="modal__wrapper">
+        <p class="modal__heading text text--head-big">Добавить в корзину</p>
+        <p class="modal__description text">Выберите размер:</p>
+        <form class="modal--add-to-basket__form" action="https://echo.htmlacademy.ru/courses" method="post">
+          <ul class="modal--add-to-basket__list">
+            <li class="modal--add-to-basket__item">
+              <label class="modal--add-to-basket__label visually-hidden" for="S">S</label>
+              <input class="modal--add-to-basket__input" type="radio" id="S" name="size" value="S">
+              <div class="modal--add-to-basket__control-mark">S</div>
+            </li>
+            <li class="modal--add-to-basket__item">
+              <label class="modal--add-to-basket__label visually-hidden" for="M">S</label>
+              <input class="modal--add-to-basket__input" type="radio" id="M" name="size" value="M">
+              <div class="modal--add-to-basket__control-mark">M</div>
+            </li>
+            <li class="modal--add-to-basket__item">
+              <label class="modal--add-to-basket__label visually-hidden" for="L">L</label>
+              <input class="modal--add-to-basket__input" type="radio" id="L" name="size" value="L">
+              <div class="modal--add-to-basket__control-mark">L</div>
+            </li>
+          </ul>
+          <button class="modal--add-to-basket__button button button--secondary">Добавить</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
