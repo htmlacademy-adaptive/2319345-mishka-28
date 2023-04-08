@@ -1,0 +1,13 @@
+.order-heading {
+  background-color: $background-color-grey;
+}
+
+.order-heading__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.order-heading__text {
+  @include text(27px, 30px, $bold);
+  color: $base-color-dark;
+}

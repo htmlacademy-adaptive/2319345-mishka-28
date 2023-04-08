@@ -1,0 +1,27 @@
+.products-item__image {
+  background-color: $background-color-grey;
+}
+
+.products-item__heading {
+  @include text(17px, 24px, $bold);
+  color: $base-color-dark;
+}
+
+.products-item__link {
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+}
+
+.products-item__description {
+  border: 1px solid $border-color;
+}
+
+.products-item__price {
+  @include text(15px, 24px, $bold);
+  color: $base-color-dark;
+}
+
+.products-item__characteristic {
+  @include text(13px, 30px);
+}

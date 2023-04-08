@@ -1,0 +1,8 @@
+.order-main__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.order-main__description {
+  @include text(13px, 24px);
+}

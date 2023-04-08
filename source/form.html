@@ -3,52 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <title>Вязаные вещи на заказ</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
   <header class="main-header">
-  <a class="main-header__logo" href="index.html">
-    <img class="main-header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип.">
-  </a>
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__list nav-list">
-        <li class="nav-list__item">
-          <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="nav-list__item">
-          <a class="main-nav__link main-nav__link--current" href="form.html">Вязание на заказ</a>
-        </li>
-      </ul>
-      <ul class="main-nav__list user-list">
-        <li class="user-list__item">
-          <a class="main-nav__link user-list__search" href="#">Поиск по сайту</a>
-        </li>
-        <li class="user-list__item">
-          <a class="main-nav__link user-list__basket" href="#">Корзина: пока пуста</a>
-        </li>
-      </ul>
-      <div class="main-nav__additional">
-        <ul class="main-nav__submenu submenu">
-          <li class="submenu__item">
-            <a class="submenu__link" href="#">Новые поступления</a>
-          </li>
-          <li class="submenu__item">
-            <a class="submenu__link" href="#">Распродажа</a>
-          </li>
-        </ul>
-        <p class="main-nav__description">Бесплатная доставка по России</p>
-      </div>
+    <div class="main-header__wrapper">
+      <a class="main-header__logo" href="index.html">
+        <img class="main-header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип.">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list nav-list list-style-reset">
+            <li class="nav-list__item">
+              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="main-nav__link main-nav__link--current" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list list-style-reset">
+            <li class="user-list__item">
+              <a class="main-nav__link user-list__search" href="#">Поиск по сайту</a>
+            </li>
+            <li class="user-list__item">
+              <a class="main-nav__link user-list__basket" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+          <div class="main-nav__additional">
+            <ul class="main-nav__submenu submenu list-style-reset">
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Новые поступления</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Распродажа</a>
+              </li>
+            </ul>
+            <p class="main-nav__description">Бесплатная доставка по России</p>
+          </div>
+        </div>
+      </nav>
     </div>
-  </nav>
 </header>
-  <main>
-    <section class="order-heading">
+  <main class="form-content">
+    <section class="form-content__section order-heading">
       <div class="order-heading__wrapper">
         <h1 class="order-heading__text">Вязание на заказ</h1>
       </div>
     </section>
-    <section class="order-main">
+    <section class="form-content__section form-content__section--big-margin order-main">
       <h2 class="visually-hidden">Форма заказа</h2>
       <div class="order-main__wrapper">
         <p class="order-main__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
@@ -142,30 +145,32 @@
     </section>
   </main>
   <footer class="main-footer">
-    <div class="main-footer__logo">
-      <a class="main-footer__logo" href="#">
-        <img class="main-footer__logo-image" src="img/mishka-logo-tablet.svg" width="102" height="34" alt="Логотип.">
-      </a>
-    </div>
-    <div class="main-footer__socials socials">
-      <ul class="socials__list">
-        <li class="socials__item">
-          <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy"><span class="visually-hidden">Вконтакте</span></a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link socials__link--yt" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Youtube</span>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link socials__link--tg" href="https://t.me/htmlacademy"><span class="visually-hidden">Telegram</span></a>
-        </li>
-      </ul>
-    </div>
-    <div class="main-footer__copyright copyright">
-      <p class="copyright__text text text--head">Разработано</p>
-      <a class="copyright__logo" href="https://htmlacademy.ru/study">
-        <img class="copyright__logo-image" src="img/htmlacademy-footer.svg" width="27" height="34" alt="Логотип HTML academy.">
-      </a>
+    <div class="main-footer__wrapper">
+      <div class="main-footer__logo-container">
+        <a class="main-footer__logo" href="#">
+          <img class="main-footer__logo-image" src="img/mishka-logo-tablet.svg" width="102" height="34" alt="Логотип.">
+        </a>
+      </div>
+      <div class="main-footer__socials socials">
+        <ul class="socials__list list-style-reset">
+          <li class="socials__item">
+            <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy"><span class="visually-hidden">Вконтакте</span></a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--yt" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--tg" href="https://t.me/htmlacademy"><span class="visually-hidden">Telegram</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__logo" href="https://htmlacademy.ru/study">
+          <img class="copyright__logo-image" src="img/htmlacademy-footer.svg" width="27" height="34" alt="Логотип HTML academy.">
+        </a>
+      </div>
     </div>
   </footer>
 </body>

@@ -1,0 +1,5 @@
+.main-nav__link {
+  @include text(17px, 24px, $bold);
+  color: $base-color-dark;
+  text-decoration: none;
+}

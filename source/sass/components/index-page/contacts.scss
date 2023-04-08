@@ -1,0 +1,16 @@
+.contacts__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.contacts__heading {
+  @include text(25px, 30px, $bold);
+}
+
+.contacts__item-name {
+  @include text(14px, 30px);
+}
+
+.contacts__item-value {
+  @include text(14px, 30px);
+}

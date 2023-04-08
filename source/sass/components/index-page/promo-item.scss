@@ -1,0 +1,10 @@
+.promo-item {
+  @include text(19px, 24px);
+  color: $base-color-light;
+  text-decoration: none;
+  display: block;
+  background-color: $accent-color-light;
+  &--dark {
+    background-color: $accent-color-dark;
+  }
+}
