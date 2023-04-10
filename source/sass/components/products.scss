@@ -2,3 +2,7 @@
   width: 260px;
   margin: 0 auto;
 }
+
+.products__list {
+  @include list-style-reset;
+}

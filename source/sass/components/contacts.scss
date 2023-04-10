@@ -7,6 +7,10 @@
   @include text(25px, 30px, $bold);
 }
 
+.contacts__list {
+  @include list-style-reset;
+}
+
 .contacts__item-name {
   @include text(14px, 30px);
 }

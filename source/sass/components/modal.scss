@@ -13,6 +13,10 @@
   text-transform: uppercase;
 }
 
+.modal__list {
+  @include list-style-reset;
+}
+
 .modal__description {
   @include text(15px, 30px);
 }

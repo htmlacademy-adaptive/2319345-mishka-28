@@ -3,3 +3,10 @@
   line-height: $line-height;
   font-weight: $weight;
 }
+
+
+@mixin list-style-reset {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
