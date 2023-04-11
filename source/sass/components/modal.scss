@@ -1,0 +1,27 @@
+.modal {
+  padding: 28px 0 46px;
+}
+
+.modal__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.modal__heading {
+  @include text(25px, 30px, $bold);
+  color: $base-color-dark;
+  text-transform: uppercase;
+}
+
+.modal__list {
+  @include list-style-reset;
+}
+
+.modal__description {
+  @include text(15px, 30px);
+}
+
+.modal__control-mark {
+  @include text(17px, 16px, $bold);
+  color: $base-color-dark;
+}

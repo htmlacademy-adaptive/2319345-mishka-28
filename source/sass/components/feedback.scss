@@ -1,0 +1,26 @@
+.feedback {
+  padding-bottom: 45px;
+}
+
+.feedback__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.feedback__heading {
+  @include text(25px, 30px, $bold);
+  color: $base-color-dark;
+}
+
+.feedback__text {
+  @include text(15px, 30px);
+}
+
+.feedback__name {
+  @include text(17px, 24px, $bold);
+  color: $base-color-dark;
+}
+
+.feedback__nickname {
+  @include text(17px, 30px);
+}

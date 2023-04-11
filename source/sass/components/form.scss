@@ -1,0 +1,14 @@
+.form__legend {
+  @include text(17px, 16px, $bold);
+  color: $accent-color-light;
+  text-transform: uppercase;
+}
+
+.form__label {
+  @include text(17px, 18px, $bold);
+  color: $base-color-dark;
+}
+
+.form__remark {
+  @include text(14px, 16px);
+}

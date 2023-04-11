@@ -1,0 +1,14 @@
+.catalog-heading {
+  min-height: 177px;
+  background-color: $background-color-grey;
+}
+
+.catalog-heading__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.catalog-heading__text {
+  @include text(27px, 30px, $bold);
+  color: $base-color-dark;
+}

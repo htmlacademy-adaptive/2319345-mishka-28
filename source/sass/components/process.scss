@@ -1,0 +1,19 @@
+.process__wrapper {
+  width: 260px;
+  margin: 0 auto;
+  padding: 21px 0 33px;
+  border: 1px solid $border-color;
+}
+
+.process__preload {
+  background-color: $background-color-grey;
+}
+
+.process__head-text {
+  @include text(17px, 24px, $bold);
+  color: $base-color-dark;
+}
+
+.process__description {
+  @include text(13px, 24px);
+}

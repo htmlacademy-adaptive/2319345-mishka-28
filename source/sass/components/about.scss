@@ -1,0 +1,14 @@
+.about__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.about__heading {
+  @include text(25px, 30px, $bold);
+  color: $base-color-dark;
+}
+
+.about__description {
+  @include text(17px, 20px, $bold);
+  color: $base-color-dark;
+}

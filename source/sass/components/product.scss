@@ -1,0 +1,35 @@
+.product {
+  padding-bottom: 36px;
+}
+
+.product__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.product__heading {
+  @include text(25px, 30px, $bold);
+  color: $base-color-dark;
+}
+
+.product__marker {
+  @include text(17px, 20px, $bold);
+  text-transform: uppercase;
+  color: $accent-color-light;
+}
+
+.product__description {
+  @include text(15px, 24px);
+}
+
+.product__price {
+  @include text(17px, 24px, $bold);
+}
+
+.product__price-value {
+  @include text(17px, 24px, $bold);
+}
+
+.product__image-container {
+  background-color: $background-color-grey;
+}

@@ -1,1 +1,39 @@
-// Начните писать стили здесь
+// Переменные и миксины
+@import "./variables.scss";
+@import "./mixins.scss";
+
+// Базовые стили
+@import "./base/fonts.scss";
+@import "./base/visually-hidden";
+@import "./base/base.scss";
+
+// Компоненты
+@import "components/page";
+@import "components/main-header";
+@import "components/main-nav";
+@import "components/nav-list";
+@import "components/user-list";
+@import "components/submenu";
+@import "components/about";
+@import "components/button";
+@import "components/contacts";
+@import "components/socials";
+@import "components/features";
+@import "components/feedback";
+@import "components/slider";
+@import "components/main-content";
+@import "components/product";
+@import "components/promo";
+@import "components/promo-item";
+@import "components/copyright";
+@import "components/main-footer";
+@import "components/modal";
+@import "components/catalog-content";
+@import "components/catalog-heading";
+@import "components/process";
+@import "components/products";
+@import "components/products-item";
+@import "components/form";
+@import "components/form-content";
+@import "components/order-heading";
+@import "components/order-main";
