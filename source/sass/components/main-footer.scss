@@ -1,4 +1,5 @@
 .main-footer {
+  width: 100%;
   background-color: $background-color-grey;
   padding: 25px 0 23px;
 }
@@ -6,4 +7,30 @@
 .main-footer__wrapper {
   width: 260px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
+}
+
+.main-footer__logo-container {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.main-footer__copyright {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }

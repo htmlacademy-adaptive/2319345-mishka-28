@@ -1,4 +1,5 @@
 .promo {
+  position: relative;
   min-height: 506px;
   background-color: $background-color-grey;
   background-image: url("../img/hero-mobile@2x1.png");
@@ -12,4 +13,17 @@
   color: $base-color-dark;
   max-width: 260px;
   margin: 0 auto;
+}
+
+.promo__links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }

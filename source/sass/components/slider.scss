@@ -1,3 +1,7 @@
 .slider {
   @include list-style-reset;
 }
+
+.slider__item:not(:first-child) {
+  display: none;
+}

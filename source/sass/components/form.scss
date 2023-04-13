@@ -12,3 +12,38 @@
 .form__remark {
   @include text(14px, 16px);
 }
+
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.form__inputs {
+  &--colors {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+    }
+  }
+}
+
+.form__footer {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.form__button {
+  order: -1;
+}

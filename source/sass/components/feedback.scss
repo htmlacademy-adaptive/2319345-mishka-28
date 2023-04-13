@@ -1,10 +1,29 @@
 .feedback {
   padding-bottom: 45px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/feedback.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: top 0 left 50px;
+  }
 }
 
 .feedback__wrapper {
+  position: relative;
   width: 260px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
 }
 
 .feedback__heading {
@@ -14,6 +33,11 @@
 
 .feedback__text {
   @include text(15px, 30px);
+
+  @media (min-width: $tablet-width) {
+    @include text(17px, 30px);
+    max-width: 100;
+  }
 }
 
 .feedback__name {
@@ -23,4 +47,22 @@
 
 .feedback__nickname {
   @include text(17px, 30px);
+}
+
+.feedback__controls {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.feedback__button {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }

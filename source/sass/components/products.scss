@@ -1,8 +1,22 @@
 .products__wrapper {
   width: 260px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
 }
 
 .products__list {
   @include list-style-reset;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }
