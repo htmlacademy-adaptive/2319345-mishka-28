@@ -13,4 +13,8 @@
     width: 668px;
     flex-direction: row;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
 }

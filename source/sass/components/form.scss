@@ -18,6 +18,12 @@
   flex-direction: column;
   border: none;
 
+  &--dark-background {
+    @media (min-width: $tablet-width) {
+      background-color: $background-color-grey;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
   }

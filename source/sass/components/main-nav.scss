@@ -11,3 +11,9 @@
     display: block;
   }
 }
+
+.main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
