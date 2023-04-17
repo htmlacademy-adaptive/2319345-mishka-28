@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -48,12 +49,10 @@
     <main class="main-content">
       <h1 class="visually-hidden">Интернет-магазин вязаных вещей для дома</h1>
       <section class="main-content__section promo">
-        <div class="promo__wrapper">
-          <h2 class="promo__heading">Милые штуки ручной работы для дома</h2>
-          <div class="promo__links">
-            <a class="promo__item promo-item" href="#">Предметы интерьера</a>
-            <a class="promo__item promo-item promo-item--dark" href="#">Детские игрушки</a>
-          </div>
+        <h2 class="promo__heading">Милые штуки ручной работы для дома</h2>
+        <div class="promo__links">
+          <a class="promo__item promo-item" href="#">Предметы<br>интерьера</a>
+          <a class="promo__item promo-item promo-item--dark" href="#">Детские<br>игрушки</a>
         </div>
       </section>
       <section class="main-content__section product">
@@ -85,23 +84,25 @@
       <section class="main-content__section main-content__section--big-margin about">
         <div class="about__wrapper">
           <h2 class="about__heading">Коротко о нас:</h2>
-          <div class="about__item">
-            <p class="about__description about__description--materials">Экологически чистые материалы</p>
-          </div>
-          <div class="about__item">
-            <p class="about__description about__description--style">Скандинавский стиль по российской цене</p>
-          </div>
-          <div class="about__item">
-            <p class="about__description about__description--likes">Увеличивает лайки на фотографиях</p>
-          </div>
-          <div class="about__item">
-            <p class="about__description about__description--handmade">Связано вручную с любовью и умилением</p>
-          </div>
-          <div class="about__item">
-            <p class="about__description about__description--domestic">Поддержка отечественного производителя</p>
-          </div>
-          <div class="about__item">
-            <p class="about__description about__description--delivery">Поставляется в подарочной упаковке</p>
+          <div class="about__items-wrapper">
+            <div class="about__item">
+              <p class="about__description about__description--materials">Экологически чистые материалы</p>
+            </div>
+            <div class="about__item">
+              <p class="about__description about__description--style">Скандинавский стиль по российской цене</p>
+            </div>
+            <div class="about__item">
+              <p class="about__description about__description--likes">Увеличивает лайки на фотографиях</p>
+            </div>
+            <div class="about__item">
+              <p class="about__description about__description--handmade">Связано вручную с любовью и умилением</p>
+            </div>
+            <div class="about__item">
+              <p class="about__description about__description--domestic">Поддержка отечественного производителя</p>
+            </div>
+            <div class="about__item">
+              <p class="about__description about__description--delivery">Поставляется в подарочной упаковке</p>
+            </div>
           </div>
         </div>
       </section>
@@ -151,18 +152,18 @@
               <p class="contacts__item-value">г. Санкт-Петербург<br>ул. Большая Конюшенная<br>д. 19/8, офис 101</p>
             </li>
           </ul>
-          <div class="contacts__map">
-            <img src="img/map-mobile@1x%201.png" width="320" height="454" alt="карта.">
-          </div>
-          <a class="contacts__button button button--primary" href="#">Напишите нам</a>
         </div>
+        <div class="contacts__map">
+          <img class="contacts__image" src="img/map-mobile@1x%201.png" width="320" height="454" alt="карта.">
+        </div>
+        <a class="contacts__button button button--primary" href="#">Напишите нам</a>
       </section>
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <div class="main-footer__logo-container">
           <a class="main-footer__logo" href="#">
-            <img class="main-footer__logo-image" src="img/mishka-logo-tablet.svg" width="102" height="34" alt="Логотип.">
+            <img class="main-footer__logo-image" src="img/logo-footer.svg" width="102" height="34" alt="Логотип.">
           </a>
         </div>
         <div class="main-footer__socials socials">

@@ -1,11 +1,17 @@
 .promo-item {
   @include text(19px, 24px);
-  color: $base-color-light;
-  text-decoration: none;
+  width: 100%;
+  min-height: 103px;
   display: block;
   background-color: $accent-color-light;
+  color: $base-color-light;
+  text-decoration: none;
 
   &--dark {
     background-color: $accent-color-dark;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
   }
 }

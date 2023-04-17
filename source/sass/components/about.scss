@@ -1,6 +1,31 @@
 .about__wrapper {
   width: 260px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
+}
+
+.about__items-wrapper {
+  max-height: 709px;
+
+  @media (min-width: $tablet-width) {
+    max-height: 409px;
+    column-count: 2;
+  }
+}
+
+.about__item {
+  min-height: 94px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 100px;
+  }
 }
 
 .about__heading {
@@ -11,4 +36,9 @@
 .about__description {
   @include text(17px, 20px, $bold);
   color: $base-color-dark;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include text(20px, 22px, $bold);
+  }
 }

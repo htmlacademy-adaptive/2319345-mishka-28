@@ -3,6 +3,35 @@
   margin: 0 auto;
   padding: 21px 0 33px;
   border: 1px solid $border-color;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "head-text"
+    "video"
+    "description"
+    "process-button";
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    grid-template-areas:
+      "video"
+      "head-text"
+      "description"
+      "process-button";
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    grid-template-columns: 683px 1fr;
+    grid-template-areas:
+      "video head-text"
+      "video description"
+      "video process-button";
+  }
+}
+
+.process__video {
+  grid-area: video;
 }
 
 .process__preload {
@@ -12,8 +41,14 @@
 .process__head-text {
   @include text(17px, 24px, $bold);
   color: $base-color-dark;
+  grid-area: head-text;
 }
 
 .process__description {
   @include text(13px, 24px);
+  grid-area: description;
+}
+
+.process__button {
+  grid-area: process-button;
 }

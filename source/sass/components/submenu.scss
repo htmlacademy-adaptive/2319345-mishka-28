@@ -1,6 +1,16 @@
+.submenu {
+  @include list-style-reset;
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+
 .submenu__link {
   @include text(15px, 24px, $bold);
-  @include list-style-reset;
   color: $base-color-dark;
   text-decoration: none;
 }

@@ -5,25 +5,72 @@
 .product__wrapper {
   width: 260px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "heading"
+    "marker"
+    "description"
+    "features"
+    "image"
+    "price"
+    "button";
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    grid-template-columns: 334px 234px 100px;
+    grid-template-areas:
+      "heading heading marker"
+      "description image image"
+      "features image image"
+      "price image image"
+      "button image image";
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    grid-template-columns: 175px 350px 1fr;
+    grid-template-areas:
+      "marker heading image"
+      "marker description image"
+      "marker features image"
+      "marker price image"
+      "marker button image";
+  }
 }
 
 .product__heading {
   @include text(25px, 30px, $bold);
   color: $base-color-dark;
+  grid-area: heading;
+
+  @media (min-width: $tablet-width) {
+    @include text(43px, 50px, $bold);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include text(53px, 57px, $bold);
+    overflow: visible;
+    z-index: 1;
+    min-width: 545px;
+  }
 }
 
 .product__marker {
   @include text(17px, 20px, $bold);
   text-transform: uppercase;
   color: $accent-color-light;
+  grid-area: marker;
 }
 
 .product__description {
   @include text(15px, 24px);
+  grid-area: description;
 }
 
 .product__price {
   @include text(17px, 24px, $bold);
+  grid-area: price;
 }
 
 .product__price-value {
@@ -32,4 +79,13 @@
 
 .product__image-container {
   background-color: $background-color-grey;
+  grid-area: image;
+}
+
+.product__features {
+  grid-area: features;
+}
+
+.product__button-order {
+  grid-area: button;
 }

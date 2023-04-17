@@ -1,6 +1,24 @@
+.contacts {
+  position: relative;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    padding-right: 527px;
+  }
+}
+
 .contacts__wrapper {
   width: 260px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
 }
 
 .contacts__heading {
@@ -9,6 +27,17 @@
 
 .contacts__list {
   @include list-style-reset;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 84px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
 }
 
 .contacts__item-name {
@@ -17,4 +46,31 @@
 
 .contacts__item-value {
   @include text(14px, 30px);
+}
+
+.contacts__map {
+  background-color: $background-color-grey;
+  max-height: 454px;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+.contacts__image {
+  margin: 0 auto;
+}
+
+.contacts__button {
+  display: block;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
 }
