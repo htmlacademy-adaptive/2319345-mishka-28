@@ -10,10 +10,24 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    &::after {
+      content: "";
+      width: 260px;
+      height: 1px;
+      background-color: $divider-color;
+      position: absolute;
+      top: 55px;
+      left: 0;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     width: 668px;
     flex-direction: row;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,4 +47,13 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+}
+
+.main-footer__socials {
+  margin: 0 auto 58px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }

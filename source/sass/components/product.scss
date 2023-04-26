@@ -1,5 +1,10 @@
 .product {
   padding-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 69px;
+    margin-bottom: 55px;
+  }
 }
 
 .product__wrapper {
@@ -18,7 +23,8 @@
 
   @media (min-width: $tablet-width) {
     width: 668px;
-    grid-template-columns: 334px 234px 100px;
+    grid-template-columns: 292px 1fr 126px;
+    column-gap: 42px;
     grid-template-areas:
       "heading heading marker"
       "description image image"
@@ -30,6 +36,7 @@
   @media (min-width: $desktop-width) {
     width: 1050px;
     grid-template-columns: 175px 350px 1fr;
+    column-gap: 0;
     grid-template-areas:
       "marker heading image"
       "marker description image"
@@ -41,11 +48,13 @@
 
 .product__heading {
   @include text(25px, 30px, $bold);
+  margin: 52px 0 4px;
   color: $base-color-dark;
   grid-area: heading;
 
   @media (min-width: $tablet-width) {
     @include text(43px, 50px, $bold);
+    margin-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -58,34 +67,79 @@
 
 .product__marker {
   @include text(17px, 20px, $bold);
+  margin: 0 0 17px;
   text-transform: uppercase;
   color: $accent-color-light;
   grid-area: marker;
+
+  @media (min-width: $tablet-width) {
+    line-height: 17px;
+    text-align: center;
+    margin: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    margin: 61px auto 0;
+  }
 }
 
 .product__description {
   @include text(15px, 24px);
   grid-area: description;
+  margin: 0 0 28px;
+
+  @media (min-width: $tablet-width) {
+    @include text(17px, 30px);
+    margin-bottom: 48px;
+  }
 }
 
 .product__price {
   @include text(17px, 24px, $bold);
   grid-area: price;
+  margin: 0 0 24px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    width: 292px;
+    margin: 0 0 33px;
+  }
 }
 
 .product__price-value {
   @include text(17px, 24px, $bold);
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .product__image-container {
   background-color: $background-color-grey;
   grid-area: image;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .product__features {
   grid-area: features;
+  margin: 0 0 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 291px;
+  }
 }
 
 .product__button-order {
   grid-area: button;
+  width: 292px;
 }

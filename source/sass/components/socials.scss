@@ -1,3 +1,28 @@
 .socials__list {
   @include list-style-reset;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 142px;
+}
+
+.socials__link {
+  display: block;
+  width: 28px;
+  height: 22px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--vk {
+    background-image: url("../img/vkontakte.svg");
+  }
+
+  &--yt {
+    background-image: url("../img/youtube.svg");
+  }
+
+  &--tg {
+    background-image: url("../img/telegram.svg");
+  }
 }

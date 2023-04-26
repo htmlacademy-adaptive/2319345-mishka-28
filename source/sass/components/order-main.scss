@@ -1,3 +1,22 @@
 .order-main__description {
   @include text(13px, 24px);
+  margin: 0 auto 29px;
+
+  @media (min-width: $tablet-width) {
+    @include text(17px, 30px);
+    margin-bottom: 13px;
+    max-width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 702px;
+  }
+}
+
+.order-main__form {
+  margin-bottom: 55px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
 }

@@ -1,7 +1,19 @@
+.features__item {
+  display: grid;
+  grid-template-columns: 97px 1fr;
+  border-bottom: 1px solid $border-color;
+  padding-bottom: 13px;
+
+  &:not(:first-child) {
+    padding-top: 12px;
+  }
+}
+
 .features__term {
   @include text(15px, 20px);
 }
 
 .features__description {
   @include text(15px, 20px);
+  margin-left: 0;
 }

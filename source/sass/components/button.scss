@@ -2,8 +2,66 @@
   @include text(18px, 20px, $bold);
   text-transform: uppercase;
   text-decoration: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  border: none;
+
+  &--primary {
+    border: 2px solid $text-color-main;
+    padding: 14px 0;
+    text-align: center;
+
+    &:hover {
+      color: $base-color-light;
+      background-color: $text-color-main;
+    }
+
+    &:active {
+      color: rgba($base-color-light, 0.3);
+    }
+  }
 
   &--secondary {
     color: $base-color-light;
+    background-color: $accent-color-light;
+  }
+
+  &--arrow {
+    display: inline-block;
+    width: 131px;
+    height: 52px;
+    border: 1px solid $border-color;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      width: 50px;
+      height: 26px;
+      border: none;
+    }
+  }
+
+  &--prev {
+    background-image: url("../img/huge-arrow-left.svg");
+  }
+
+  &--next {
+    background-image: url("../img/huge-arrow-right.svg");
+    width: 129px;
+    border-left: none;
+
+    @media (min-width: $tablet-width) {
+      width: 50px;
+    }
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

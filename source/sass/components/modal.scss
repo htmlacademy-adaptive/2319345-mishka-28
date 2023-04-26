@@ -5,25 +5,63 @@
 .modal__wrapper {
   width: 260px;
   margin: 0 auto;
+  padding: 28px 30px 46px;
+
+  @media (min-width: $tablet-width) {
+    width: 566px;
+    padding: 37px 92px 46px;
+  }
 }
 
 .modal__heading {
   @include text(25px, 30px, $bold);
   color: $base-color-dark;
   text-transform: uppercase;
+  margin: 0 0 14px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include text(30px, 57px, $bold);
+    margin-bottom: 11px;
+  }
 }
 
 .modal__list {
   @include list-style-reset;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 31px;
+}
+
+.modal__input {
+  display: none;
 }
 
 .modal__description {
   @include text(15px, 30px);
+  margin: 0 0 21px;
+
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    margin-bottom: 19px;
+  }
 }
 
 .modal__control-mark {
   @include text(17px, 16px, $bold);
   color: $base-color-dark;
+  padding: 18px 22px;
+  border: 2px solid $text-color-main;
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 37px;
+  }
+}
+
+.modal__button {
+  padding: 18px 0 18px 0;
+  width: 100%;
 }

@@ -1,3 +1,15 @@
+.about {
+  margin-bottom: 58px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 89px;
+  }
+}
+
 .about__wrapper {
   width: 260px;
   margin: 0 auto;
@@ -21,22 +33,92 @@
 }
 
 .about__item {
-  min-height: 94px;
+  min-height: 88px;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: flex-end;
 
   @media (min-width: $tablet-width) {
     min-height: 100px;
+  }
+
+  &:nth-child(3n) {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
   }
 }
 
 .about__heading {
   @include text(25px, 30px, $bold);
   color: $base-color-dark;
+  margin: 0 0 28px;
+
+  @media (min-width: $tablet-width) {
+    @include text(43px, 50px, $bold);
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include text(53px, 57px, $bold);
+    margin-bottom: 39px;
+  }
 }
 
 .about__description {
   @include text(17px, 20px, $bold);
   color: $base-color-dark;
   margin: 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom: 60px;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      bottom: 63px;
+    }
+  }
+
+  &--materials::before {
+    width: 33px;
+    height: 38px;
+    background-image: url("../img/icon-materials.svg");
+  }
+
+  &--style::before {
+    width: 47px;
+    height: 27px;
+    background-image: url("../img/icon-style.svg");
+  }
+
+  &--likes::before {
+    width: 34px;
+    height: 27px;
+    background-image: url("../img/icon-likes.svg");
+  }
+
+  &--handmade::before {
+    width: 35px;
+    height: 34px;
+    background-image: url("../img/icon-handmade.svg");
+  }
+
+  &--domestic::before {
+    width: 55px;
+    height: 23px;
+    background-image: url("../img/icon-domestic.svg");
+  }
+
+  &--delivery::before {
+    width: 33px;
+    height: 32px;
+    background-image: url("../img/icon-delivery.svg");
+  }
 
   @media (min-width: $tablet-width) {
     @include text(20px, 22px, $bold);

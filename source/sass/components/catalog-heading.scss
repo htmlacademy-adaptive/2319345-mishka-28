@@ -1,14 +1,47 @@
 .catalog-heading {
   min-height: 177px;
   background-color: $background-color-grey;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 111px;
+  }
 }
 
 .catalog-heading__wrapper {
   width: 260px;
+  min-height: 177px;
   margin: 0 auto;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    min-height: 238px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    min-height: 272px;
+  }
 }
 
 .catalog-heading__text {
   @include text(27px, 30px, $bold);
   color: $base-color-dark;
+  padding-top: 73px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    @include text(43px, 50px, $bold);
+    padding-top: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include text(53px, 57px, $bold);
+    padding-top: 101px;
+  }
 }

@@ -1,11 +1,33 @@
 .order-heading {
   min-height: 177px;
   background-color: $background-color-grey;
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+    min-height: 238px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 98px;
+    min-height: 272px;
+  }
 }
 
 .order-heading__text {
   @include text(27px, 30px, $bold);
+  padding-top: 73px;
   margin: 0 auto;
   text-align: center;
   color: $base-color-dark;
+
+  @media (min-width: $tablet-width) {
+    @include text(43px, 50px, $bold);
+    padding-top: 101px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include text(53px, 57px, $bold);
+    padding-top: 102px;
+  }
 }

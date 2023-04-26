@@ -1,17 +1,54 @@
 .promo-item {
-  @include text(19px, 24px);
+  @include text(19px, 24px, $bold);
   width: 100%;
   min-height: 103px;
   display: block;
   background-color: $accent-color-light;
   color: $base-color-light;
   text-decoration: none;
-
-  &--dark {
-    background-color: $accent-color-dark;
-  }
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 50%;
+  }
+
+  &::after {
+    content: "";
+    width: 40px;
+    height: 62px;
+    background-image: url("../img/interior.svg");
+    opacity: 0.5;
+    position: absolute;
+    top: 50%;
+    right: 36px;
+    transform: translateY(-50%);
+  }
+
+  &:hover {
+    background-color: #59d5bc;
+    min-height: 108px;
+
+    &::after {
+      opacity: 0.7;
+    }
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
+
+  &--dark {
+    background-color: $accent-color-dark;
+
+    &::after {
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/toy.svg");
+      right: 27px;
+    }
+
+    &:hover {
+      background-color: #46c1ae;
+    }
   }
 }
