@@ -61,7 +61,6 @@
       content: "";
       width: 18px;
       height: 18px;
-      -webkit-mask-image: url("../img/search.svg");
       mask-image: url("../img/search.svg");
       background-color: $base-color-dark;
       opacity: 0.2;
@@ -89,7 +88,6 @@
       content: "";
       width: 21px;
       height: 18px;
-      -webkit-mask-image: url("../img/cart.svg");
       mask-image: url("../img/cart.svg");
       background-color: $base-color-dark;
       opacity: 0.2;
