@@ -1,29 +1,96 @@
 .modal {
-  padding: 28px 0 46px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .modal__wrapper {
-  width: 260px;
-  margin: 0 auto;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  padding: 28px 0 46px;
+  background-color: $base-color-light;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+
+  @media (min-width: $tablet-width) {
+    width: 566px;
+    padding: 37px 92px 46px;
+  }
 }
 
 .modal__heading {
   @include text(25px, 30px, $bold);
   color: $base-color-dark;
   text-transform: uppercase;
+  margin: 0 0 14px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include text(30px, 57px, $bold);
+    margin-bottom: 11px;
+  }
+}
+
+.modal__form {
+  width: 260px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+  }
 }
 
 .modal__list {
   @include list-style-reset;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 31px;
+}
+
+.modal__input {
+  display: none;
 }
 
 .modal__description {
   @include text(15px, 30px);
+  margin: 0 0 21px;
+
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    margin-bottom: 19px;
+  }
 }
 
 .modal__control-mark {
   @include text(17px, 16px, $bold);
   color: $base-color-dark;
+  width: 82px;
+  padding: 18px 0;
+  border: 2px solid rgba($text-color-main, 0.1);
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+  }
+}
+
+.modal__item:hover > .modal__control-mark {
+  border-color: rgba($text-color-main, 0.3);
+}
+
+.modal__item:active > .modal__control-mark {
+  border-color: #62d1ba;
+}
+
+.modal__button {
+  padding: 18px 0 18px 0;
+  width: 100%;
 }

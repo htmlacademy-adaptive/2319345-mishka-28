@@ -5,5 +5,47 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    max-width: 440px;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 110px;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+  }
+}
+
+.nav-list__item:not(:last-child) {
+  @media (min-width: $tablet-width) {
+    margin-right: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.nav-list__item:nth-child(odd) a {
+  @media (min-width: $desktop-width) {
+    padding-right: 35px;
+    border-right: 1px solid rgba($base-color-dark, 0.1);
+  }
+}
+
+.nav-list__item:nth-child(even) a {
+  @media (min-width: $desktop-width) {
+    padding-left: 35px;
+  }
+}
+
+.nav-list__item span {
+  @media (min-width: $tablet-width) {
+    @include text(15px, 24px, $bold);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include text(17px, 24px, $bold);
   }
 }

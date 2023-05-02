@@ -1,20 +1,22 @@
 .form-content__container {
   width: 260px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 
   @media (min-width: $tablet-width) {
     width: 668px;
+
+    &--name,
+    &--tel,
+    &--email,
+    &--colors,
+    &--add {
+      display: flex;
+      flex-direction: row;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 1050px;
-  }
-}
-
-.form-content__section {
-  margin-bottom: 17px;
-
-  &--big-margin {
-    margin-bottom: 55px;
   }
 }

@@ -4,6 +4,22 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
+    height: 100%;
     flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 540px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    max-width: 430px;
+  }
+}
+
+.user-list__item a {
+  @media (min-width: $tablet-width) {
+    border-left: 1px solid rgba($base-color-dark, 0.1);
+    padding-left: 83px;
+    min-height: 89px;
   }
 }

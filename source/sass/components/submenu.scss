@@ -5,7 +5,15 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: -44px;
+    left: 0;
   }
+}
+
+.submenu__item:not(:last-child) {
+  margin-right: 64px;
 }
 
 
@@ -13,4 +21,12 @@
   @include text(15px, 24px, $bold);
   color: $base-color-dark;
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
