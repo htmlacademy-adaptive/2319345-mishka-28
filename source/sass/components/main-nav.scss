@@ -4,7 +4,7 @@
 
 .main-nav {
   @media (min-width: $tablet-width) {
-    height: 89px;
+    min-height: 89px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -18,8 +18,7 @@
 .main-nav__link {
   display: flex;
   align-items: center;
-  height: 79px;
-  padding-left: 24%;
+  min-height: 79px;
   text-decoration: none;
   box-shadow: 0 1px 0 $divider-color, inset 0 1px 0 $divider-color;
 
@@ -45,14 +44,21 @@
 
   @media (min-width: $tablet-width) {
     box-shadow: none;
-    height: 100%;
-    padding: 0;
+    min-height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 89px;
   }
 }
 
 .main-nav__link-text {
   @include text(17px, 24px, $bold);
   color: $base-color-dark;
+  width: 260px;
+  margin: 0 auto;
+  text-align: left;
+  padding-left: 46px;
 
   &--search {
     position: relative;
@@ -68,7 +74,7 @@
       background-position: 50% 50%;
       position: absolute;
       top: 50%;
-      left: -44px;
+      left: 0;
       transform: translateY(-50%);
 
       @media (min-width: $tablet-width) {
@@ -95,9 +101,18 @@
       background-position: 50% 50%;
       position: absolute;
       top: 50%;
-      left: -46px;
+      left: 0;
       transform: translateY(-50%);
+
+      @media (min-width: $tablet-width) {
+        left: -51px;
+      }
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding: 0;
   }
 }
 
@@ -108,7 +123,7 @@
     @include text(15px, 24px);
     display: block;
     position: absolute;
-    top: 110px;
+    bottom: -44px;
     right: 0;
     margin: 0;
   }
@@ -151,4 +166,8 @@
     display: flex;
     flex-direction: row;
   }
+}
+
+.main-nav__submenu {
+  max-width: 780px;
 }

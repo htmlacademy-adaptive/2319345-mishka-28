@@ -13,16 +13,25 @@
   height: 22px;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: $base-color-dark;
 
   &--vk {
-    background-image: url("../img/vkontakte.svg");
+    mask-image: url("../img/vkontakte.svg");
   }
 
   &--yt {
-    background-image: url("../img/youtube.svg");
+    mask-image: url("../img/youtube.svg");
   }
 
   &--tg {
-    background-image: url("../img/telegram.svg");
+    mask-image: url("../img/telegram.svg");
+  }
+
+  &:hover {
+    background-color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

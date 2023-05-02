@@ -10,6 +10,14 @@
   @media (min-width: $desktop-width) {
     flex-direction: column;
   }
+
+  &:hover > .products-item__description {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active > .products-item__description {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .products-item__image {
@@ -18,14 +26,6 @@
   @media (min-width: $tablet-width) {
     max-width: 334px;
     height: 334px;
-  }
-
-  &:hover + .products-item__description {
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  &:active + .products-item__description {
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 }
 

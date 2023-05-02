@@ -255,6 +255,14 @@
     }
   }
 
+  &:hover > .form__control-mark {
+    border-color: #62d1ba;
+  }
+
+  &:active > .form__control-mark {
+    border-color: rgba($text-color-main, 0.3);
+  }
+
   &--text {
     flex-direction: column;
     align-items: flex-start;

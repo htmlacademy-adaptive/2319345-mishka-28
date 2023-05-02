@@ -43,6 +43,23 @@
   }
 }
 
+.main-footer__logo-image {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    fill: $base-color-dark;
+
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
 .main-footer__copyright {
   display: flex;
   flex-direction: row;

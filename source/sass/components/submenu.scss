@@ -5,8 +5,9 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     position: absolute;
-    top: 110px;
+    bottom: -44px;
     left: 0;
   }
 }

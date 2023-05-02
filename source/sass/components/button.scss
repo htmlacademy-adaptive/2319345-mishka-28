@@ -23,6 +23,8 @@
   }
 
   &--secondary {
+    font-size: 17px;
+    line-height: 16px;
     color: $base-color-light;
     background-color: $accent-color-light;
   }
@@ -36,10 +38,22 @@
     background-repeat: no-repeat;
     cursor: pointer;
 
+    &:active {
+      opacity: 0.3;
+    }
+
     @media (min-width: $tablet-width) {
       width: 50px;
       height: 26px;
       border: none;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
     }
   }
 
@@ -57,11 +71,7 @@
     }
   }
 
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
   }
 }

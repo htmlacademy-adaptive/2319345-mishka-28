@@ -2,3 +2,15 @@
   @include text(19px, 18px, $bold);
   margin-right: 27px;
 }
+
+.copyright__logo svg {
+  fill: #63d1bb;
+}
+
+.copyright__logo:hover svg {
+  fill: #46c1ae;
+}
+
+.copyright__logo:active svg {
+  opacity: 0.3;
+}

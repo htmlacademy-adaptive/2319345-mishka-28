@@ -1,6 +1,6 @@
 .main-header {
   @media (min-width: $tablet-width) {
-    height: 89px;
+    min-height: 89px;
     position: relative;
 
     &::after {
@@ -41,6 +41,7 @@
 
   @media (min-width: $tablet-width) {
     height: 89px;
+    box-shadow: none;
   }
 
   @media (min-width: $desktop-width) {
