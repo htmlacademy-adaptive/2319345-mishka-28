@@ -14,7 +14,11 @@
     <header class="main-header">
     <div class="main-header__wrapper">
       <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип.">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg" width="149" height="72">
+          <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg" width="113" height="46">
+          <img class="main-header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип.">
+        </picture>
       </a>
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>

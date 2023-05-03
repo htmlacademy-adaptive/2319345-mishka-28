@@ -34,9 +34,10 @@
 }
 
 .main-header__logo {
+  min-height: 79px;
   display: flex;
-  height: 79px;
   justify-content: center;
+  align-items: center;
   box-shadow: 0 1px 0 $divider-color, inset 0 1px 0 $divider-color;
 
   @media (min-width: $tablet-width) {
