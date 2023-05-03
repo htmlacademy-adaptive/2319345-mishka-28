@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Каталог</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/fav32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/fav180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
   <body class="page__body">
     <header class="main-header">
@@ -56,7 +60,11 @@
           <ul class="products__list">
             <li class="products__item products-item">
               <a class="products-item__image" href="#">
-                <img src="img/photo-1-mobile%201.png" width="260" height="195" alt="Зайчик-попрыгайчик.">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/photo-1-desktop.png 1x, img/photo-1-desktop2x.png 2x" width="316" height="462">
+                  <source media="(min-width: 768px)" srcset="img/photo-1-tablet.png 1x, img/photo-1-tablet2x.png 2x" width="334" height="334">
+                  <img src="img/photo-1-mobile.png" srcset="img/photo-1-mobile2x.png 2x" width="260" height="195" alt="Зайчик-попрыгайчик.">
+                </picture>
               </a>
               <div class="products-item__description">
                 <h3 class="products-item__heading"><a class="products-item__link" href="#">Зайчик-попрыгайчик</a></h3>
@@ -69,7 +77,11 @@
             </li>
             <li class="products__item products-item">
               <a class="products-item__image" href="#">
-                <img src="img/photo-2-mobile%201.png" width="260" height="195" alt="Корзинка для белья.">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/photo-2-desktop.png 1x, img/photo-2-desktop2x.png 2x" width="316" height="462">
+                  <source media="(min-width: 768px)" srcset="img/photo-2-tablet.png 1x, img/photo-2-tablet2x.png 2x" width="334" height="334">
+                  <img src="img/photo-2-mobile.png" srcset="img/photo-2-mobile2x.png 2x" width="260" height="195" alt="Корзинка для белья.">
+                </picture>
               </a>
               <div class="products-item__description">
                 <h3 class="products-item__heading"><a class="products-item__link" href="#">Корзинка для белья</a></h3>
@@ -82,7 +94,11 @@
             </li>
             <li class="products__item products-item">
               <a class="products-item__image" href="#">
-                <img src="img/photo-3-mobile%201.png" width="260" height="195" alt="Большая корзинка для игрушек.">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/photo-3-desktop.png 1x, img/photo-3-desktop2x.png 2x" width="316" height="462">
+                  <source media="(min-width: 768px)" srcset="img/photo-3-tablet.png 1x, img/photo-3-tablet2x.png 2x" width="334" height="334">
+                  <img src="img/photo-3-mobile.png" srcset="img/photo-3-mobile2x.png 2x" width="260" height="195" alt="Большая корзинка для игрушек.">
+                </picture>
               </a>
               <div class="products-item__description">
                 <h3 class="products-item__heading"><a class="products-item__link" href="#">Большая корзинка<br>для игрушек</a></h3>
@@ -101,9 +117,13 @@
           <h2 class="process__head-text">Процесс производства</h2>
           <div class="process__video">
             <button class="process__video-control button" type="button"><span class="visually-hidden">Проиграть видео</span></button>
-            <div class="process__preload">
-              <img class="process__preload-image" src="img/video-mobile%201.png" width="260" height="150" alt="Превью к видео - вязаная корзинка.">
-            </div>
+            <a class="process__preload">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/video-desktop.png 1x, img/video-desktop2x.png 2x" width="683" height="455">
+                <source media="(min-width: 768px)" srcset="img/video-tablet.png 1x, img/video-tablet2x.png 2x" width="668" height="455">
+                <img class="process__preload-image" src="img/video-mobile.png" srcset="img/video-mobile2x.png" width="260" height="150" alt="Превью к видео - вязаная корзинка.">
+              </picture>
+            </a>
           </div>
           <p class="process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
           <a class="process__button button button--primary" href="form.html">Сделать заказ</a>

@@ -11,7 +11,7 @@
   width: 260px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 260px;
   grid-template-areas:
     "heading"
     "marker"
@@ -141,5 +141,8 @@
 
 .product__button-order {
   grid-area: button;
-  width: 292px;
+
+  @media (min-width: $tablet-width) {
+    width: 292px;
+  }
 }

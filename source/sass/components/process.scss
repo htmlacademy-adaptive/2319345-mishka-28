@@ -59,6 +59,8 @@
 }
 
 .process__preload {
+  display: block;
+  height: 150px;
   background-color: $background-color-grey;
 
   @media (min-width: $tablet-width) {
@@ -134,6 +136,7 @@
   grid-area: process-button;
   width: 192px;
   margin: 0 auto;
+  color: inherit;
 
   @media (min-width: $tablet-width) {
     width: 584px;

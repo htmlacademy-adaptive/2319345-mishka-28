@@ -1,17 +1,27 @@
 .promo {
   display: flex;
   flex-direction: column;
-  min-height: 506px;
+  min-height: 489px;
   margin-bottom: 31px;
   background-color: #f9f9f9;
-  background-image: url("../img/hero-mobile@2x1.png");
+  background-image: url("../img/hero-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: top center;
+  background-position: top -18px center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-mobile@2x.png");
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 758px;
     margin-bottom: 39px;
+    background-image: url("../img/hero-desktop1x.png");
+    background-position: top center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-desktop2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
