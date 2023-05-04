@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/fav32.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/fav180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__logo" href="#">
-          <img class="main-header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип.">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg" width="149" height="72">
+            <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg" width="113" height="46">
+            <img class="main-header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип.">
+          </picture>
         </a>
         <nav class="main-nav main-nav--opened main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
@@ -81,7 +89,11 @@
             </div>
           </dl>
           <div class="product__image-container">
-            <img src="img/promo-image.png" width="260" height="315" alt="вязаные корзинки.">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/promo-image-desktop.png 1x, img/promo-image-desktop2x.png 2x" width="525" height="636">
+              <source media="(min-width: 768px)" srcset="img/promo-image-tablet.png 1x, img/promo-image-tablet2x.png 2x" width="334" height="404">
+              <img src="img/promo-image.png" srcset="img/promo-image2x.png 2x" width="260" height="315" alt="вязаные корзинки.">
+            </picture>
           </div>
           <p class="product__price">Цена: <span class="product__price-value">990</span> руб.</p>
           <button class="product__button-order button button--primary" type="button">Заказать</button>

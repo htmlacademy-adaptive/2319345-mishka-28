@@ -118,6 +118,7 @@
 
   &--email {
     position: relative;
+    color: inherit;
 
     &::after {
       content: "";
@@ -168,6 +169,7 @@
   text-align: center;
   width: 260px;
   margin: 0 auto;
+  color: inherit;
 
   @media (min-width: $desktop-width) {
     width: 230px;
