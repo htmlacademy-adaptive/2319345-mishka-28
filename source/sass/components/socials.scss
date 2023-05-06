@@ -16,15 +16,15 @@
   background-color: $base-color-dark;
 
   &--vk {
-    mask-image: url("../img/vkontakte.svg");
+    mask-image: url("../img/stack.svg#vk");
   }
 
   &--yt {
-    mask-image: url("../img/youtube.svg");
+    mask-image: url("../img/stack.svg#yt");
   }
 
   &--tg {
-    mask-image: url("../img/telegram.svg");
+    mask-image: url("../img/stack.svg#telegram");
   }
 
   &:hover {

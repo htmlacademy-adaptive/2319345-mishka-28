@@ -67,7 +67,7 @@
       content: "";
       width: 18px;
       height: 18px;
-      mask-image: url("../img/search.svg");
+      mask-image: url("../img/stack.svg#search");
       background-color: $base-color-dark;
       opacity: 0.2;
       background-repeat: no-repeat;
@@ -94,7 +94,7 @@
       content: "";
       width: 21px;
       height: 18px;
-      mask-image: url("../img/cart.svg");
+      mask-image: url("../img/stack.svg#cart");
       background-color: $base-color-dark;
       opacity: 0.2;
       background-repeat: no-repeat;
@@ -130,25 +130,35 @@
 }
 
 .main-nav__toggle {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  right: 30px;
   height: 79px;
-  padding: 0 12px;
-  background-image: url("../img/menu-close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  width: auto;
   background-color: transparent;
   border: none;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 30px;
+}
+
+.main-nav__toggle::before {
+  content: "";
+  display: inline-block;
+  width: 21px;
+  height: 20px;
+  background-image: url("../img/stack.svg#menu-close");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.main-nav--closed .main-nav__toggle {
-  background-image: url("../img/menu.svg");
+.main-nav--closed .main-nav__toggle::before {
+  width: 20px;
+  height: 14px;
+  background-image: url("../img/stack.svg#menu");
 }
 
 @media (max-width: $mobile-width-only) {

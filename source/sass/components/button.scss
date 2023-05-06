@@ -36,6 +36,7 @@
     border: 1px solid $border-color;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 50px 26px;
     cursor: pointer;
 
     &:active {
@@ -58,11 +59,11 @@
   }
 
   &--prev {
-    background-image: url("../img/huge-arrow-left.svg");
+    background-image: url("../img/stack.svg#huge-arrow-left");
   }
 
   &--next {
-    background-image: url("../img/huge-arrow-right.svg");
+    background-image: url("../img/stack.svg#huge-arrow-right");
     width: 129px;
     border-left: none;
 

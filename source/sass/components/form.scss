@@ -74,12 +74,14 @@
 }
 
 .form__input--phone {
-  background-image: url("../img/phone.svg");
+  background-size: 25px 24px;
+  background-image: url("../img/stack.svg#phone");
   background-position: top 11px right 26px;
 }
 
 .form__input--email {
-  background-image: url("../img/mail.svg");
+  background-size: 32px 21px;
+  background-image: url("../img/stack.svg#mail");
   background-position: top 16px right 22px;
 }
 

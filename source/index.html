@@ -90,6 +90,9 @@
           </dl>
           <div class="product__image-container">
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/promo-image-desktop1x.webp 1x, img/promo-image-desktop2x.webp 2x" width="525" height="636">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/promo-image-tablet1x.webp 1x, img/promo-image-tablet2x.webp 2x" width="334" height="404">
+              <source type="image/webp" srcset="img/promo-image1x.webp 1x, img/promo-image2x.webp 2x" width="260" height="315">
               <source media="(min-width: 1150px)" srcset="img/promo-image-desktop.png 1x, img/promo-image-desktop2x.png 2x" width="525" height="636">
               <source media="(min-width: 768px)" srcset="img/promo-image-tablet.png 1x, img/promo-image-tablet2x.png 2x" width="334" height="404">
               <img src="img/promo-image.png" srcset="img/promo-image2x.png 2x" width="260" height="315" alt="вязаные корзинки.">
@@ -97,6 +100,32 @@
           </div>
           <p class="product__price">Цена: <span class="product__price-value">990</span> руб.</p>
           <button class="product__button-order button button--primary" type="button">Заказать</button>
+          <div class="modal modal--add-to-basket">
+            <div class="modal__wrapper">
+              <p class="modal__heading">Добавить в корзину</p>
+              <p class="modal__description">Выберите размер:</p>
+              <form class="modal__form" action="https://echo.htmlacademy.ru/courses" method="post">
+                <ul class="modal__list">
+                  <li class="modal__item modal__item--current">
+                    <label class="modal__label visually-hidden" for="S">S</label>
+                    <input class="modal__input" type="radio" id="S" name="size" value="S">
+                    <div class="modal__control-mark">S</div>
+                  </li>
+                  <li class="modal__item">
+                    <label class="modal__label visually-hidden" for="M">S</label>
+                    <input class="modal__input" type="radio" id="M" name="size" value="M">
+                    <div class="modal__control-mark">M</div>
+                  </li>
+                  <li class="modal__item">
+                    <label class="modal__label visually-hidden" for="L">L</label>
+                    <input class="modal__input" type="radio" id="L" name="size" value="L">
+                    <div class="modal__control-mark">L</div>
+                  </li>
+                </ul>
+                <button class="modal__button button button--secondary" type="button">Добавить</button>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
       <section class="main-content__section main-content__section--big-margin about">
@@ -208,40 +237,14 @@
         </div>
         <div class="main-footer__copyright copyright">
           <p class="copyright__text">Разработано</p>
-          <a class="copyright__logo" href="https://htmlacademy.ru/study">
-            <svg aria-hidden="true" focusable="false" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.7587 0H13.6592L0.21875 1.39589V26.0235L13.6592 34L27 26.0235V1.39589L13.7587 0ZM25.1084 12.0645L13.6592 5.28446V5.18475H13.5596L13.4601 5.08504V5.18475L2.11037 12.0645V3.09091L13.5596 1.89443L25.1084 3.09091V12.0645ZM13.5596 6.78006L25.0089 13.4604L20.5287 16.0528L13.4601 11.8651V13.261L19.334 16.7507L18.438 17.2493L13.4601 14.2581V15.654L17.2433 17.9472L16.4468 18.4457L13.4601 16.651V18.0469L15.3517 19.1437L13.5596 20.2405L2.20992 13.5601L13.5596 6.78006ZM2.11037 15.0557L13.4601 21.8358V22.8328L5.59492 18.1466V19.5425L13.5596 24.3284V25.4252L5.59492 20.739V22.1349L13.5596 26.9208L21.6239 22.0352V16.8504L25.0089 14.8563V24.827L13.5596 31.7067L2.11037 24.9267V15.0557Z"/>
+          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg aria-hidden="true" focusable="false" width="27" height="34">
+              <use xlink:href="img/stack.svg#htmlacademy"></use>
             </svg>
           </a>
         </div>
       </div>
     </footer>
-    <div class="modal modal--add-to-basket">
-      <div class="modal__wrapper">
-        <p class="modal__heading">Добавить в корзину</p>
-        <p class="modal__description">Выберите размер:</p>
-        <form class="modal__form" action="https://echo.htmlacademy.ru/courses" method="post">
-          <ul class="modal__list">
-            <li class="modal__item modal__item--current">
-              <label class="modal__label visually-hidden" for="S">S</label>
-              <input class="modal__input" type="radio" id="S" name="size" value="S">
-              <div class="modal__control-mark">S</div>
-            </li>
-            <li class="modal__item">
-              <label class="modal__label visually-hidden" for="M">S</label>
-              <input class="modal__input" type="radio" id="M" name="size" value="M">
-              <div class="modal__control-mark">M</div>
-            </li>
-            <li class="modal__item">
-              <label class="modal__label visually-hidden" for="L">L</label>
-              <input class="modal__input" type="radio" id="L" name="size" value="L">
-              <div class="modal__control-mark">L</div>
-            </li>
-          </ul>
-          <button class="modal__button button button--secondary" type="button">Добавить</button>
-        </form>
-      </div>
-    </div>
   <script src="script.js"></script>
   </body>
 </html>
