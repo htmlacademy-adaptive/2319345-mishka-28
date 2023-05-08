@@ -1,3 +1,7 @@
+.form__input {
+  font-family: inherit;
+}
+
 .form__input[type="radio"],
 .form__input[type="checkbox"] {
   display: none;
@@ -28,6 +32,7 @@
 
 .form__input--textarea {
   @include text(17px, 18px);
+  font-family: inherit;
   width: 260px;
   min-height: 142px;
   border: 2px solid $text-color-main;

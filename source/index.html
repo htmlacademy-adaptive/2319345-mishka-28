@@ -100,32 +100,6 @@
           </div>
           <p class="product__price">Цена: <span class="product__price-value">990</span> руб.</p>
           <button class="product__button-order button button--primary" type="button">Заказать</button>
-          <div class="modal modal--add-to-basket">
-            <div class="modal__wrapper">
-              <p class="modal__heading">Добавить в корзину</p>
-              <p class="modal__description">Выберите размер:</p>
-              <form class="modal__form" action="https://echo.htmlacademy.ru/courses" method="post">
-                <ul class="modal__list">
-                  <li class="modal__item modal__item--current">
-                    <label class="modal__label visually-hidden" for="S">S</label>
-                    <input class="modal__input" type="radio" id="S" name="size" value="S">
-                    <div class="modal__control-mark">S</div>
-                  </li>
-                  <li class="modal__item">
-                    <label class="modal__label visually-hidden" for="M">S</label>
-                    <input class="modal__input" type="radio" id="M" name="size" value="M">
-                    <div class="modal__control-mark">M</div>
-                  </li>
-                  <li class="modal__item">
-                    <label class="modal__label visually-hidden" for="L">L</label>
-                    <input class="modal__input" type="radio" id="L" name="size" value="L">
-                    <div class="modal__control-mark">L</div>
-                  </li>
-                </ul>
-                <button class="modal__button button button--secondary" type="button">Добавить</button>
-              </form>
-            </div>
-          </div>
         </div>
       </section>
       <section class="main-content__section main-content__section--big-margin about">
@@ -245,6 +219,32 @@
         </div>
       </div>
     </footer>
+    <div class="modal">
+      <div class="modal__wrapper modal__wrapper--add-to-basket">
+        <p class="modal__heading">Добавить в корзину</p>
+        <p class="modal__description">Выберите размер:</p>
+        <form class="modal__form" action="https://echo.htmlacademy.ru/courses" method="post">
+          <ul class="modal__list">
+            <li class="modal__item">
+              <label class="modal__label">S
+                <input class="modal__input" type="radio" name="size" value="S">
+              </label>
+            </li>
+            <li class="modal__item">
+              <label class="modal__label">M
+                <input class="modal__input" type="radio" name="size" value="M">
+              </label>
+            </li>
+            <li class="modal__item">
+              <label class="modal__label">L
+                <input class="modal__input" type="radio" name="size" value="L">
+              </label>
+            </li>
+          </ul>
+          <button class="modal__button button button--secondary" type="button">Добавить</button>
+        </form>
+      </div>
+    </div>
   <script src="script.js"></script>
   </body>
 </html>
