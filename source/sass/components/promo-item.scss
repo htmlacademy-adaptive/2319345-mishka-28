@@ -14,7 +14,7 @@
     content: "";
     width: 40px;
     height: 62px;
-    background-image: url("../img/interior.svg");
+    background-image: url("../img/stack.svg#interior");
     opacity: 0.5;
     position: absolute;
     top: 50%;
@@ -28,7 +28,7 @@
     &::after {
       width: 60px;
       height: 60px;
-      background-image: url("../img/toy.svg");
+      background-image: url("../img/stack.svg#toy");
       right: 27px;
     }
   }

@@ -87,37 +87,37 @@
   &--materials::before {
     width: 33px;
     height: 38px;
-    background-image: url("../img/icon-materials.svg");
+    background-image: url("../img/stack.svg#icon-materials");
   }
 
   &--style::before {
     width: 47px;
     height: 27px;
-    background-image: url("../img/icon-style.svg");
+    background-image: url("../img/stack.svg#icon-style");
   }
 
   &--likes::before {
     width: 34px;
     height: 27px;
-    background-image: url("../img/icon-likes.svg");
+    background-image: url("../img/stack.svg#icon-likes");
   }
 
   &--handmade::before {
     width: 35px;
     height: 34px;
-    background-image: url("../img/icon-handmade.svg");
+    background-image: url("../img/stack.svg#icon-handmade");
   }
 
   &--domestic::before {
     width: 55px;
     height: 23px;
-    background-image: url("../img/icon-domestic.svg");
+    background-image: url("../img/stack.svg#icon-domestic");
   }
 
   &--delivery::before {
     width: 33px;
     height: 32px;
-    background-image: url("../img/icon-delivery.svg");
+    background-image: url("../img/stack.svg#icon-delivery");
   }
 
   @media (min-width: $tablet-width) {

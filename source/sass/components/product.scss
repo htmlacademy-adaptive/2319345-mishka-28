@@ -145,4 +145,8 @@
   @media (min-width: $tablet-width) {
     width: 292px;
   }
+
+  &:focus ~ .modal {
+    display: flex;
+  }
 }
