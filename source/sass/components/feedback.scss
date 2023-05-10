@@ -21,7 +21,7 @@
       width: 350px;
       height: 457px;
       background-color: #d9d9d9;
-      background-image: url("../img/feedback.png");
+      background-image: url("../img/feedback.webp");
       background-repeat: no-repeat;
       background-size: contain;
       background-position: top left;
@@ -31,7 +31,7 @@
       z-index: -1;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/feedback2x.png");
+        background-image: url("../img/feedback2x.webp");
       }
     }
   }
