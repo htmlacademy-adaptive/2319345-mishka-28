@@ -95,6 +95,10 @@
   border-color: #62d1ba;
 }
 
+.modal__input:checked + .modal__label {
+  border-color: #62d1ba;
+}
+
 .modal__button {
   padding: 18px 0 18px 0;
   width: 100%;

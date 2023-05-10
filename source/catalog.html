@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Каталог</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/fav32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/fav180.png">
@@ -183,19 +183,16 @@
         <form class="modal__form" action="https://echo.htmlacademy.ru/courses" method="post">
           <ul class="modal__list">
             <li class="modal__item">
-              <label class="modal__label">S
-                <input class="modal__input" type="radio" name="size" value="S">
-              </label>
+              <input class="modal__input" type="radio" name="size" id="S" value="S">
+              <label class="modal__label" for="S">S</label>
             </li>
             <li class="modal__item">
-              <label class="modal__label">M
-                <input class="modal__input" type="radio" name="size" value="M">
-              </label>
+              <input class="modal__input" type="radio" name="size" id="M" value="M">
+              <label class="modal__label" for="M">M</label>
             </li>
             <li class="modal__item">
-              <label class="modal__label">L
-                <input class="modal__input" type="radio" name="size" value="L">
-              </label>
+              <input class="modal__input" type="radio" name="size" id="L" value="L">
+              <label class="modal__label" for="L">L</label>
             </li>
           </ul>
           <button class="modal__button button button--secondary" type="button">Добавить</button>
