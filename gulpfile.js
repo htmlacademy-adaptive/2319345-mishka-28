@@ -36,7 +36,7 @@ const html = () => {
 // Scripts
 
 const scripts = () => {
-  return gulp.src('source/script.js')
+  return gulp.src('source/js/script.js')
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
 }
@@ -52,6 +52,13 @@ const optimizeImages = () => {
 const copyImages = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
     .pipe(gulp.dest('build/img'))
+}
+
+// Manifest
+
+const copyManifest = () => {
+  return gulp.src('source/manifest.webmanifest')
+    .pipe(gulp.dest('build/manifest.webmanifest'))
 }
 
 // WebP
@@ -151,6 +158,7 @@ export default gulp.series(
   clean,
   copy,
   copyImages,
+  copyManifest,
   gulp.parallel(
     styles,
     html,
