@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/fav32.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/fav180.png">
-    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="manifest" href="manifest.webmanifest/manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -93,9 +93,9 @@
               <source type="image/webp" media="(min-width: 1150px)" srcset="img/promo-image-desktop1x.webp 1x, img/promo-image-desktop2x.webp 2x" width="525" height="636">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/promo-image-tablet1x.webp 1x, img/promo-image-tablet2x.webp 2x" width="334" height="404">
               <source type="image/webp" srcset="img/promo-image1x.webp 1x, img/promo-image2x.webp 2x" width="260" height="315">
-              <source media="(min-width: 1150px)" srcset="img/promo-image-desktop.png 1x, img/promo-image-desktop2x.png 2x" width="525" height="636">
-              <source media="(min-width: 768px)" srcset="img/promo-image-tablet.png 1x, img/promo-image-tablet2x.png 2x" width="334" height="404">
-              <img src="img/promo-image.png" srcset="img/promo-image2x.png 2x" width="260" height="315" alt="вязаные корзинки.">
+              <source media="(min-width: 1150px)" srcset="img/promo-image-desktop1x.png 1x, img/promo-image-desktop2x.png 2x" width="525" height="636">
+              <source media="(min-width: 768px)" srcset="img/promo-image-tablet1x.png 1x, img/promo-image-tablet2x.png 2x" width="334" height="404">
+              <img src="img/promo-image1x.png" srcset="img/promo-image2x.png 2x" width="260" height="315" alt="вязаные корзинки.">
             </picture>
           </div>
           <p class="product__price">Цена: <span class="product__price-value">990</span> руб.</p>
@@ -226,25 +226,22 @@
         <form class="modal__form" action="https://echo.htmlacademy.ru/courses" method="post">
           <ul class="modal__list">
             <li class="modal__item">
-              <label class="modal__label">S
-                <input class="modal__input" type="radio" name="size" value="S">
-              </label>
+              <input class="modal__input" type="radio" name="size" id="S" value="S">
+              <label class="modal__label" for="S">S</label>
             </li>
             <li class="modal__item">
-              <label class="modal__label">M
-                <input class="modal__input" type="radio" name="size" value="M">
-              </label>
+              <input class="modal__input" type="radio" name="size" id="M" value="M">
+              <label class="modal__label" for="M">M</label>
             </li>
             <li class="modal__item">
-              <label class="modal__label">L
-                <input class="modal__input" type="radio" name="size" value="L">
-              </label>
+              <input class="modal__input" type="radio" name="size" id="L" value="L">
+              <label class="modal__label" for="L">L</label>
             </li>
           </ul>
           <button class="modal__button button button--secondary" type="button">Добавить</button>
         </form>
       </div>
     </div>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
   </body>
 </html>
