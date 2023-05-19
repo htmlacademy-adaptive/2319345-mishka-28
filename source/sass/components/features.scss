@@ -2,10 +2,10 @@
   display: grid;
   grid-template-columns: 97px 1fr;
   border-bottom: 1px solid $border-color;
-  padding-bottom: 13px;
+  padding-bottom: 12px;
 
   &:not(:first-child) {
-    padding-top: 12px;
+    padding-top: 7px;
   }
 }
 

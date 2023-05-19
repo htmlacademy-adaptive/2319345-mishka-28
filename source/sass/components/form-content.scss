@@ -18,5 +18,12 @@
 
   @media (min-width: $desktop-width) {
     width: 1050px;
+
+    &--name,
+    &--tel,
+    &--email,
+    &--add {
+      padding-right: 173px;
+    }
   }
 }

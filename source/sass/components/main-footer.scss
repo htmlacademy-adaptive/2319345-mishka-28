@@ -2,6 +2,10 @@
   width: 100%;
   background-color: $background-color-grey;
   padding: 25px 0 23px;
+
+  @media (min-width: $tablet-width) {
+    padding: 51px 0 58px;
+  }
 }
 
 .main-footer__wrapper {
@@ -68,7 +72,7 @@
 }
 
 .main-footer__socials {
-  margin: 0 auto 58px;
+  margin: 0 auto 54px;
 
   @media (min-width: $tablet-width) {
     margin: 0;

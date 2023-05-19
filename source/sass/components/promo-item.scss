@@ -34,7 +34,10 @@
   }
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
     width: 50%;
+    min-height: 119px;
     padding: 25px 36px 34px;
 
     &:hover {
