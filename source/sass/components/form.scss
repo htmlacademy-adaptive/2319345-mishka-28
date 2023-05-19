@@ -236,8 +236,8 @@
     position: relative;
   }
 
-  &--email:after,
-  &--tel:after {
+  &--email::after,
+  &--tel::after {
     content: "";
     background-color: rgba($base-color-dark, 0.2);
     background-repeat: no-repeat;
@@ -246,7 +246,7 @@
     transform: translateY(-50%);
   }
 
-  &--tel:after {
+  &--tel::after {
     width: 25px;
     height: 24px;
     right: 7px;
@@ -261,7 +261,7 @@
     }
   }
 
-  &--email:after {
+  &--email::after {
     width: 32px;
     height: 21px;
     right: 3px;
@@ -277,7 +277,7 @@
   }
 }
 
-.form__inputs--tel:hover::after ,
+.form__inputs--tel:hover::after,
 .form__inputs--email:hover::after {
   background-color: #62d1ba;
 }
@@ -420,6 +420,7 @@
 
 .form__button {
   font-family: inherit;
+
   @media (min-width: $tablet-width) {
     order: -1;
     width: 230px;

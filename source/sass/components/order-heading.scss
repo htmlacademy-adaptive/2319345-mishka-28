@@ -8,7 +8,7 @@
     margin-bottom: 66px;
     min-height: 226px;
 
-    &:after {
+    &::after {
       content: "";
       width: 100%;
       height: 24px;
@@ -25,7 +25,7 @@
     margin-bottom: 115px;
     min-height: 255px;
 
-    &:after {
+    &::after {
       height: 34px;
       bottom: -17px;
     }
