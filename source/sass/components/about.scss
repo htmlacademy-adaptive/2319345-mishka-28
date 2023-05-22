@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 81px;
+    margin-bottom: 85px;
   }
 }
 
@@ -19,21 +19,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1050px;
-    padding-left: 175px;
+    max-width: 1050px;
+    position: relative;
+    left: -15px;
   }
 }
 
 .about__items-wrapper {
-  max-height: 709px;
 
   @media (min-width: $tablet-width) {
     column-count: 2;
-    height: 413px;
-  }
-
-  @media (min-width: $desktop-width) {
-    columns: 350px auto;
   }
 }
 
@@ -45,6 +40,10 @@
 
   @media (min-width: $tablet-width) {
     min-height: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 350px;
   }
 
   &::before {

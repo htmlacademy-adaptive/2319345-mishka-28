@@ -90,16 +90,11 @@
   }
 }
 
-.form__input[type="tel"] {
+.form__input--phone,
+.form__input--email {
   @media (min-width: $tablet-width) {
     padding-top: 14px;
     padding-bottom: 18px;
-  }
-}
-
-.form__input[type="email"] {
-  @media (min-width: $tablet-width) {
-    padding-top: 15px;
   }
 }
 
@@ -231,13 +226,11 @@
     }
   }
 
-  &--email,
-  &--tel {
+  &--has-icon {
     position: relative;
   }
 
-  &--email::after,
-  &--tel::after {
+  &--has-icon::after {
     content: "";
     background-color: rgba($base-color-dark, 0.2);
     background-repeat: no-repeat;
@@ -277,8 +270,7 @@
   }
 }
 
-.form__inputs--tel:hover::after,
-.form__inputs--email:hover::after {
+.form__inputs--has-icon:hover::after {
   background-color: #62d1ba;
 }
 

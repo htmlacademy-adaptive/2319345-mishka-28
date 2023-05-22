@@ -11,6 +11,7 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 155px;
+    margin-bottom: 71px;
   }
 
   &::after {
@@ -105,7 +106,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 875px;
+    max-width: 815px;
     margin-bottom: 44px;
   }
 }

@@ -147,12 +147,12 @@
 
 .contacts__map {
   background-color: $background-color-grey;
-  max-height: 454px;
+  height: 454px;
   margin-bottom: 42px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 55px;
-    max-height: 457px;
+    height: 457px;
   }
 
   @media (min-width: $desktop-width) {
@@ -163,6 +163,12 @@
     height: 100%;
     overflow: hidden;
     margin-bottom: 0;
+  }
+
+  & iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
   }
 }
 
