@@ -57,7 +57,7 @@
       background-size: contain;
       background-position: top left;
       position: absolute;
-      top: -79px;
+      top: -83px;
       left: calc((668px - 100vw) / 2);
       z-index: -1;
 
@@ -119,6 +119,14 @@
   @include text(17px, 24px, $bold);
   color: $base-color-dark;
   margin: 0 0 4px;
+
+  @media (min-width: $tablet-width) {
+    letter-spacing: 0.04em;
+  }
+
+  @media (min-width: $desktop-width) {
+    letter-spacing: 0;
+  }
 }
 
 .feedback__nickname {
@@ -153,7 +161,11 @@
   @media (min-width: $tablet-width) {
     width: 175px;
     position: absolute;
-    top: 0;
+    top: -4px;
     right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 1px;
   }
 }

@@ -50,7 +50,7 @@
   border: 2px solid $text-color-main;
   resize: vertical;
   max-height: 300px;
-  padding: 17px;
+  padding: 15px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -86,7 +86,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: 17px;
+    padding: 12px 17px 12px 17px;
+    font-size: 19px;
+    line-height: 18px;
   }
 }
 
@@ -103,7 +105,7 @@
   color: $accent-color-light;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -412,10 +414,12 @@
 
 .form__button {
   font-family: inherit;
+  letter-spacing: -0.03em;
 
   @media (min-width: $tablet-width) {
     order: -1;
     width: 230px;
+    letter-spacing: 0;
   }
 }
 
