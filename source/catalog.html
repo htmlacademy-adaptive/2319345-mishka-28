@@ -9,6 +9,7 @@
   <link rel="icon" href="img/fav32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/fav180.png">
   <link rel="manifest" href="manifest.webmanifest/manifest.webmanifest">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
 </head>
   <body class="page__body">
     <header class="main-header">
@@ -52,22 +53,25 @@
       </nav>
     </div>
   </header>
-    <main class="catalog-content">
-      <section class="catalog-content__section catalog-heading">
+    <main>
+      <section class="catalog-heading">
         <div class="catalog-heading__wrapper">
           <h1 class="catalog-heading__text">Каталог товаров</h1>
         </div>
       </section>
-      <section class="catalog-content__section products">
+      <section class="products">
         <h2 class="visually-hidden">Список товаров</h2>
         <div class="products__wrapper">
           <ul class="products__list">
             <li class="products__item products-item">
               <a class="products-item__image" href="#">
                 <picture>
-                  <source media="(min-width: 1150px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop2x.webp 2x" width="316" height="462">
-                  <source media="(min-width: 768px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet2x.webp 2x" width="334" height="334">
-                  <img src="img/photo-1-mobile.webp" srcset="img/photo-1-mobile2x.webp 2x" width="260" height="195" alt="Зайчик-попрыгайчик.">
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop2x.webp 2x" width="525" height="636">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet2x.webp 2x" width="334" height="404">
+                  <source type="image/webp" srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile2x.webp 2x" width="260" height="315">
+                  <source media="(min-width: 1150px)" srcset="img/photo-1-desktop.png 1x, img/photo-1-desktop2x.png 2x" width="316" height="462">
+                  <source media="(min-width: 768px)" srcset="img/photo-1-tablet.png 1x, img/photo-1-tablet2x.png 2x" width="334" height="334">
+                  <img src="img/photo-1-mobile.png" srcset="img/photo-1-mobile2x.png 2x" width="260" height="195" alt="Зайчик-попрыгайчик.">
                 </picture>
               </a>
               <div class="products-item__description">
@@ -82,9 +86,12 @@
             <li class="products__item products-item">
               <a class="products-item__image" href="#">
                 <picture>
-                  <source media="(min-width: 1150px)" srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop2x.webp 2x" width="316" height="462">
-                  <source media="(min-width: 768px)" srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet2x.webp 2x" width="334" height="334">
-                  <img src="img/photo-2-mobile.webp" srcset="img/photo-2-mobile2x.webp 2x" width="260" height="195" alt="Корзинка для белья.">
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop2x.webp 2x" width="525" height="636">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet2x.webp 2x" width="334" height="404">
+                  <source type="image/webp" srcset="img/photo-2-mobile.webp 1x, img/photo-2-mobile2x.webp 2x" width="260" height="315">
+                  <source media="(min-width: 1150px)" srcset="img/photo-2-desktop.png 1x, img/photo-2-desktop2x.png 2x" width="316" height="462">
+                  <source media="(min-width: 768px)" srcset="img/photo-2-tablet.png 1x, img/photo-2-tablet2x.png 2x" width="334" height="334">
+                  <img src="img/photo-2-mobile.png" srcset="img/photo-2-mobile2x.png 2x" width="260" height="195" alt="Корзинка для белья.">
                 </picture>
               </a>
               <div class="products-item__description">
@@ -99,9 +106,12 @@
             <li class="products__item products-item">
               <a class="products-item__image" href="#">
                 <picture>
-                  <source media="(min-width: 1150px)" srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop2x.webp 2x" width="316" height="462">
-                  <source media="(min-width: 768px)" srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet2x.webp 2x" width="334" height="334">
-                  <img src="img/photo-3-mobile.webp" srcset="img/photo-3-mobile2x.webp 2x" width="260" height="195" alt="Большая корзинка для игрушек.">
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop2x.webp 2x" width="525" height="636">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet2x.webp 2x" width="334" height="404">
+                  <source type="image/webp" srcset="img/photo-3-mobile.webp 1x, img/photo-3-mobile2x.webp 2x" width="260" height="315">
+                  <source media="(min-width: 1150px)" srcset="img/photo-3-desktop.png 1x, img/photo-3-desktop2x.png 2x" width="316" height="462">
+                  <source media="(min-width: 768px)" srcset="img/photo-3-tablet.png 1x, img/photo-3-tablet2x.png 2x" width="334" height="334">
+                  <img src="img/photo-3-mobile.png" srcset="img/photo-3-mobile2x.png 2x" width="260" height="195" alt="Большая корзинка для игрушек.">
                 </picture>
               </a>
               <div class="products-item__description">
@@ -116,7 +126,7 @@
           </ul>
         </div>
       </section>
-      <section class="catalog-content__section catalog-content__section--bid-margin process">
+      <section class="process">
         <div class="process__wrapper">
           <h2 class="process__head-text">Процесс производства</h2>
           <div class="process__video">
@@ -132,7 +142,7 @@
               </picture>
             </a>
           </div>
-          <p class="process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <p class="process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о&nbsp;том, как появляются наши товары.</p>
           <a class="process__button button button--primary" href="form.html">Сделать заказ</a>
         </div>
       </section>
@@ -170,7 +180,7 @@
           <p class="copyright__text">Разработано</p>
           <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
             <svg aria-hidden="true" focusable="false" width="27" height="34">
-              <use xlink:href="img/stack.svg#htmlacademy"></use>
+              <use xlink:href="img/stack.svg#htmlacademy-footer"></use>
             </svg>
           </a>
         </div>

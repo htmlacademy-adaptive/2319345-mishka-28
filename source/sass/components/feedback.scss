@@ -1,10 +1,41 @@
 .feedback {
-  padding-bottom: 47px;
-  margin-bottom: 89px;
+  padding-bottom: 51px;
+  margin-bottom: 38px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    padding-top: 79px;
-    margin-bottom: 131px;
+    padding-top: 82px;
+    padding-bottom: 101px;
+    margin-bottom: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 155px;
+    margin-bottom: 71px;
+  }
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 6px;
+    background-image: url("../img/zigzag-line-desktop.svg");
+    background-size: contain;
+    background-repeat: repeat-x;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      height: 17px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 23px;
+      width: 1050px;
+      background-position: center;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
 
@@ -26,7 +57,7 @@
       background-size: contain;
       background-position: top left;
       position: absolute;
-      top: -79px;
+      top: -83px;
       left: calc((668px - 100vw) / 2);
       z-index: -1;
 
@@ -51,6 +82,7 @@
   @include text(25px, 30px, $bold);
   color: $base-color-dark;
   margin: 0;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     @include text(43px, 50px, $bold);
@@ -58,14 +90,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include text(50px, 57px, $bold);
+    @include text(53px, 57px, $bold);
     margin-bottom: 35px;
   }
 }
 
 .feedback__text {
   @include text(15px, 30px);
-  margin: 0 0 18px;
+  margin: 0 0 33px;
 
   @media (min-width: $tablet-width) {
     @include text(17px, 30px);
@@ -74,14 +106,27 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 875px;
+    max-width: 815px;
+    margin-bottom: 44px;
   }
+}
+
+.feedback__author {
+  margin-bottom: 30px;
 }
 
 .feedback__name {
   @include text(17px, 24px, $bold);
   color: $base-color-dark;
-  margin: 0 0 11px;
+  margin: 0 0 4px;
+
+  @media (min-width: $tablet-width) {
+    letter-spacing: 0.04em;
+  }
+
+  @media (min-width: $desktop-width) {
+    letter-spacing: 0;
+  }
 }
 
 .feedback__nickname {
@@ -99,8 +144,13 @@
     justify-content: space-between;
     width: 137px;
     position: absolute;
-    bottom: 0;
+    bottom: -21px;
     right: 19px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    bottom: 16px;
   }
 }
 
@@ -111,7 +161,11 @@
   @media (min-width: $tablet-width) {
     width: 175px;
     position: absolute;
-    top: 0;
+    top: -4px;
     right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 1px;
   }
 }

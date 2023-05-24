@@ -5,10 +5,27 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 67px;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 24px;
+      background-image: url("../img/zigzag-fill-desktop.svg");
+      background-size: contain;
+      background-repeat: repeat-x;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 111px;
+    margin-bottom: 110px;
+
+    &::after {
+      height: 34px;
+    }
   }
 }
 
