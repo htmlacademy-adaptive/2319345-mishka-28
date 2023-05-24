@@ -1,5 +1,13 @@
 .process {
   margin-bottom: 58px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 105px;
+  }
 }
 
 .process__wrapper {
@@ -107,7 +115,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 79px;
-    padding-top: 96px;
+    padding-top: 95px;
     max-width: 260px;
   }
 }
@@ -145,6 +153,7 @@
   @media (min-width: $desktop-width) {
     width: 230px;
     margin-bottom: 60px;
+    margin-left: 79px;
   }
 }
 

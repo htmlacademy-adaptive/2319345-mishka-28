@@ -1,6 +1,11 @@
 .copyright__text {
   @include text(19px, 18px, $bold);
-  margin-right: 27px;
+  margin: 0;
+  margin-right: 29px;
+}
+
+.copyright__logo {
+  display: inline-flex;
 }
 
 .copyright__logo svg {

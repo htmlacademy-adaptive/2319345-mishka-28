@@ -7,7 +7,7 @@ import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
-import svgstore from 'gulp-svgstore';
+import { stacksvg } from 'gulp-stacksvg';
 import del from 'del';
 import browser from 'browser-sync';
 
@@ -81,10 +81,8 @@ const svg = () =>
 const sprite = () => {
   return gulp.src('source/img/icons/*.svg')
     .pipe(svgo())
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename('sprite.svg'))
+    .pipe(stacksvg())
+    .pipe(rename('stack.svg'))
     .pipe(gulp.dest('build/img'));
 }
 
@@ -142,6 +140,7 @@ const watcher = () => {
 export const build = gulp.series(
   clean,
   copy,
+  copyManifest,
   optimizeImages,
   gulp.parallel(
     styles,

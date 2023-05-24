@@ -1,6 +1,6 @@
 .order-main__description {
   @include text(13px, 24px);
-  margin: 0 auto 29px;
+  margin: 0 auto 30px;
 
   @media (min-width: $tablet-width) {
     @include text(17px, 30px);
