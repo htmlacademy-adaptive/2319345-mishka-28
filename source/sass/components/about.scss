@@ -2,11 +2,7 @@
   margin-bottom: 58px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 84px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 85px;
+    margin-bottom: 103px;
   }
 }
 
@@ -29,6 +25,7 @@
   @media (min-width: $tablet-width) {
     column-count: 2;
     column-gap: 0;
+    margin-bottom: -32px;
   }
 
   @media (min-width: $desktop-width) {
@@ -150,7 +147,6 @@
 
   &--delivery {
     min-height: 92px;
-    margin-bottom: 0;
 
     &::before {
       width: 33px;
@@ -162,12 +158,6 @@
     @media (min-width: $tablet-width) {
       min-height: 97px;
       padding-top: 53px;
-    }
-  }
-
-  &:nth-child(3n) {
-    @media (min-width: $tablet-width) {
-      margin-bottom: 0;
     }
   }
 }
